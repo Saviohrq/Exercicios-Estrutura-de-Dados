@@ -9,7 +9,7 @@ public class Lista02Matrizes {
         };
 
         q01(matriz);
-        
+        q02(matriz);
     }
 
     // Questão 1
@@ -18,6 +18,21 @@ public class Lista02Matrizes {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (i == j) {
+                    System.out.print(0 + " ");
+                } else {
+                    System.out.print(matriz[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    // Questão 2
+    public static void q02(int[][] matriz) {
+        System.out.println("\nQuestão 2:");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (i + j == matriz.length - 1) {
                     System.out.print(0 + " ");
                 } else {
                     System.out.print(matriz[i][j] + " ");
